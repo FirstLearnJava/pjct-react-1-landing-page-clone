@@ -1,23 +1,34 @@
-import './App.css';
-import logo from './logo.svg';
+import styles from './App.module.scss';
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={styles.shorterTop}>
+        <header className={styles.header}>
+          <div className={styles.logoContainer}></div>
+          <div className={styles.headerLinks}>
+            <ul>
+              <li>
+                <a>Features</a>
+              </li>
+              <li>
+                <a>Pricing</a>
+              </li>
+              <li>
+                <a>Why Lunch Money?</a>
+              </li>
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a className={styles.loginButton}>Login</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <main></main>
+      <footer></footer>
+    </>
   );
 }
