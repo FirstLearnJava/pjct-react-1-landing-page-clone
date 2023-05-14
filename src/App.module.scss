@@ -1,8 +1,18 @@
-.shorterTop {
+.landing {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerAndFirstSection {
   margin: auto;
   padding: 32px 0 64px 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fafafa 99%),
     url('https://lunchmoney.app/assets/images/bg-pattern.png') repeat;
+  width: 100%;
 }
 
 .header {
@@ -17,46 +27,155 @@
   ul {
     list-style: none;
   }
+}
 
-  .logoContainer {
-    width: 50px;
-    height: 50px;
-    min-width: 250px;
+.logoContainer {
+  width: 250px;
+  height: 200px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerLinks {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .headerLinks {
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    li {
-      margin: 0 8px;
-      position: relative;
-      display: flex;
-    }
-    a {
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-      border-bottom-color: rgba(255, 255, 255, 0);
-      padding: 2.4px;
-      margin: 0 16px 16px 0;
-      color: #44958c;
-      font-weight: 550;
+  li {
+    margin: 0 8px;
+    position: relative;
+    display: flex;
+  }
+  a {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0);
+    padding: 2.4px;
+    margin: 0 16px 16px 0;
+    color: #44958c;
+    font-weight: 550;
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    .loginButton {
-      position: relative;
-      top: -2px;
-      border: 1px solid #44958c;
-      background-color: #fff;
-      border-radius: 4px;
-      margin-bottom: 1em;
-      &:hover {
-        text-decoration: none;
-      }
+    &:hover {
+      text-decoration: underline;
     }
   }
+  .loginButton {
+    position: relative;
+    top: -2px;
+    border: 1px solid #44958c;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.shorterTop {
+  margin-top: 64px !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 96px auto;
+}
+
+.landingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+
+  .coinLogo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0px;
+    animation-name: bounce;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes bounce {
+    0% {
+      top: -15px;
+    }
+
+    100% {
+      top: 0px;
+    }
+  }
+  .coinShadow {
+    margin: 20px auto;
+    width: 60px;
+    height: 10px;
+    background: #000;
+    opacity: 0.5;
+    border-radius: 80%;
+    animation-name: shadow;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes shadow {
+    0% {
+      width: 55px;
+      height: 8px;
+      opacity: 0.5;
+    }
+
+    100% {
+      width: 30px;
+      height: 6px;
+      opacity: 0.8;
+    }
+  }
+
+  .rightContent {
+    padding: 0 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+h1,
+h2,
+h3 {
+  padding: 0;
+  width: 80%;
+  max-width: 700px;
+  margin: 0;
+  text-align: left !important;
+  line-height: 110% !important;
+  margin-bottom: 1rem;
+}
+.jamstackLogo {
+  width: 220px;
+}
+.jamstackDescription {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #f0047f !important;
+}
+.submitEmailButton {
+  background-color: #55b021;
+  width: 280px;
+  height: 44px;
+}
+.inputEmailaddress {
+  width: 250px;
+  height: 43px;
+}
+.askEmail {
+  display: flex;
+  justify-content: flex-start;
 }
